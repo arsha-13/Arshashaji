@@ -43,9 +43,6 @@ For Software:. Frontend (React)
 
 We’ll keep things basic—just create flashcards and display quizzes.
 1.1 Install React
-
-First, create a new React app:
-
 npx create-react-app flashcard-quiz-app
 cd flashcard-quiz-app
 
@@ -70,10 +67,6 @@ npm start
 If you’re using the backend:
 
 node server.js
-
-4. Future Improvements
-
-    Persist Flashcards: If using a backend, connect the frontend to fetch flashcards and store answers.
     Authentication: Add user login for saving personalized flashcards and quiz history.
     Timer: Add a timer to make the quiz more challenging.
 # Installation
