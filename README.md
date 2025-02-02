@@ -1,4 +1,4 @@
-# [Project Name] 🎯
+# [FlashCard Quiz App] 🎯
 
 
 ## Basic Details
