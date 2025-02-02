@@ -7,9 +7,6 @@
 
 ### Team Members
 - Member 1: [Arsha Shaji] - [College of engineering and management Punnapra,Alappuzha]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
-
 ### Hosted Project Link
 [mention your project hosted project link here]
 
@@ -17,10 +14,16 @@
 [It is a flashcard based quiz app that helps the users to test their knowledge on various topics. The app should feature a time limit, difficulty levels (easy, medium, hard), scoring, and immediate feedback on answers. The goal is to provide a fun, educational experience with an engaging interface.]
 
 ### The Problem statement
-[Flashcard quiz app with time limit and difficulty levels it measure the persons general knowledge level and also make each persons more productive]
+[Learning through flashcards is a proven method, but traditional methods lack engagement and structure. This app solves that by introducing:
+Timed quizzes to improve response speed
+Difficulty levels to challenge users at different levels
+Score tracking to measure progress]
 
 ### The Solution
-[The solution to this problem is a Python-based desktop application using the Tkinter library to build the graphical user interface (GUI), along with some basic logic for handling questions, scoring, timers, and feedback. The app allows users to choose a difficulty level, answers questions within a time limit, and provides feedback on whether the answers are correct or incorrect.]
+[The solution to this problem is a Python-based desktop application using the Tkinter library to build the graphical user interface (GUI), along with some basic logic for handling questions, scoring, timers, and feedback. The app allows users to choose a difficulty level, answers questions within a time limit, and provides feedback on whether the answers are correct or incorrect.A user-friendly quiz interface
+A timer mechanism (60 seconds per round)
+Multiple-choice questions categorized by difficulty
+Feedback on correct/wrong answers]
 
 ## Technical Details
 ### Technologies/Components Used
@@ -113,8 +116,6 @@ The Flash Card Quiz App is a learning tool that allows users to create flashcard
     Review Mode: Users can review the questions they answered incorrectly.
 
 3. Technologies
-
-    Frontend: React (for web) or Flutter (for mobile).
     Backend (optional): Node.js with Express.js (if storing flashcards or quiz data online).
     Database (optional): MongoDB (if needed for storing data).
 
@@ -156,141 +157,39 @@ The Flash Card Quiz App is a learning tool that allows users to create flashcard
 ![Screenshot3](./Screenshots/img3.png)
 *Add caption explaining what this shows*
 
-# Diagrams
-              +-------------------------+
-              | Start                   |
-              +-------------------------+
-                         |
-        +----------------+-------------------+
-        |                                    |
-  +---------------+                    +------------------+
-  | Create Flashcard |                  | Start Quiz       |
-  +---------------+                    +------------------+
-        |                                    |
-  +----------------+                 +------------------+
-  | Add Question & |                 | Show Quiz Question|
-  | Answer         |                 | and Answer Field |
-  +----------------+                 +------------------+
-        |                                    |
-  +----------------+                  +------------------+
-  | Save Flashcard |                  | Submit Answer    |
-  +----------------+                  +------------------+
-        |                                    |
-  +----------------------+           +-----------------------+
-  | Display Flashcards   |           | Check Answer          |
-  +----------------------+           +-----------------------+
-        |                                    |
-+--------------------------+        +------------------------+
-| View Flashcard List      |        | Correct / Incorrect    |
-+--------------------------+        +------------------------+
-                                          |
-                                          |
-                                    +----------------------+
-                                    | Display Results      |
-                                    +----------------------+
-
-For Hardware:
+# Diagrams------+
 
 # Schematic & Circuit
-![Circuit]--                                +------------------------+
-                                |     Arduino Uno        |
-                                +------------------------+
-                                         |
-          +-------------------+--------------------+--------------------+
-          |                   |                    |                    |
-      +---+---+           +---+---+            +---+---+            +---+---+
-      | Button1|           | Button2|            | Button3|            | Button4|
-      +--------+           +--------+            +--------+            +--------+
-          |                   |                    |                    |
-        [10kΩ]              [10kΩ]               [10kΩ]               [10kΩ]    (Pull-Down Resistors)
-          |                   |                    |                    |
-      +---+---+           +---+---+            +---+---+            +---+---+
-      | GND    |           | GND    |            | GND    |            | GND    |
-      +--------+           +--------+            +--------+            +--------+
-          |                   |                    |                    |
-          +----[D2]----+      +----[D3]----+       +----[D4]----+       +----[D5]----+
-                          |                     |                    |
-                      [Button Pins]            [Button Pins]         [Button Pins]
-          +-------------------+------------------+--------------------+-----------------+
-                                         |
-                                 +-------+--------+
-                                 |   LEDs (D6-D9) |
-                                 +----------------+
-                                          |
-                                    +-----+-----+
-                                    |           |
-                                  [220Ω]      [220Ω] (Current-Limiting Resistors)
-                                    |           |
-                             +------+---+  +----+---+  +----+---+  +----+---+
-                             |   LED 1   |  |  LED 2 |  |  LED 3 |  |  LED 4 |   (Indicate Correct Answers)
-                             +-----------+  +--------+  +--------+  +--------+
-                                          |
-                                      +---+---+
-                                      |  Buzzer|
-                                      +--------+
-                                          |
-                                       [Buzzer Pin D10]
-                                          |
-                                       [10kΩ] (Optional Resistor for Noise Filtering)
-                                          |
-                                       +-- GND --+
-
-
-![Schematic]--                        +----------------------+
-                        |     Arduino UNO      |
-                        +----------------------+
-                        |                      |
-           +------------| 5V                   |
-           |            +----------------------+
-           |            | GND                  |
-           |            +----------------------+
-           |            | D2 - Button 1        |
-           |            | D3 - Button 2        |
-           |            | D4 - Button 3        |
-           |            | D5 - Button 4        |
-           |            | D6 - LED 1           |
-           |            | D7 - LED 2           |
-           |            | D8 - LED 3           |
-           |            | D9 - LED 4           |
-           |            | D10 - Buzzer         |
-           |            +----------------------+
-           |
-        [Button 1]---| D2   Button
-        [Button 2]---| D3   Button
-        [Button 3]---| D4   Button
-        [Button 4]---| D5   Button
-        [LED 1]------| D6   LED
-        [LED 2]------| D7   LED
-        [LED 3]------| D8   LED
-        [LED 4]------| D9   LED
-        [Buzzer]-----| D10  Buzzer
-
+     
 
 # Build Photos
-![Team](Add photo of your team here)
+![Team](https://drive.google.com/file/d/1i3tZXGZ1xW-38Vv9AgLRPYKMy2l6dFGf/view?usp=drive_link)
 
 
 ![Components](Add photo of your components here)
 *List out all components shown*
 
-![Build](Add photos of build process here)
+![Build](https://drive.google.com/drive/folders/1DP5-7CQmWeQ9Ldx03aPddbtrGa6HdHty?usp=drive_link)
 *Explain the build steps*
 
-![Final](Add photo of final product here)
+![Final](https://drive.google.com/drive/folders/1LLa7J1go-tY4Q9woLIEiskNd0qIgWTlG?usp=drive_link)
 *Explain the final build*
 
 ### Project Demo
 # Video
-[Add your demo video link here]
+[https://drive.google.com/file/d/1AUF8MIWCx7kc4gjL7qBDMW8nltNp9pHz/view?usp=drive_link]
 *Explain what the video demonstrates*
 
 # Additional Demos
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+Arsha Shaji:
+Developed the Tkinter-based GUI
+Implemented quiz logic and timer
+Integrated difficulty levels
+Built the scoring system
+
 
 ---
 Made with ❤️ at TinkerHub
